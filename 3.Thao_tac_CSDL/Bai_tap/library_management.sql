@@ -44,7 +44,9 @@ where status = 'borrowing';
 /*Hiển thị tên sv, tên sách của những sv đang mượn từ bảng STUDENT - BORROW_TICKET (đk: student_IDnumber = student_id)
 và bảng STUDENT - BOOK*/
 
-select student.student_name, book.book_name, borrow_ticket.status from student inner join book
+select student.student_name, book.book_name, borrow_ticket.status 
+from student 
+inner join book
 inner join borrow_ticket on borrow_ticket.book_id = book.book_id
 and student.student_IDnumber = borrow_ticket.student_id
 where status = 'returned';
