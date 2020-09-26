@@ -1,0 +1,91 @@
+body{
+    margin:0 auto;
+    font-family: Arial, Tahoma;
+}
+
+.s-body{
+    float: left;
+}
+
+.head, .head-link, .s-body, .footer{
+    width: 100%;
+    margin-bottom:5px;
+    clear: both;
+}
+
+/*Tất cả màn hình có độ phân giải là 1001 px*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class *= 'col-'] {
+    float: left;
+}
+
+.row::after{
+    clear: both;
+}
+
+    body{
+        width: 980px;
+        font-size: 14px;
+    }
+
+    .head{
+        height: 100px;
+        background-color: #F5F5F5;
+        border: 1px solid #CDCDCD;
+    }
+
+    .head-link{
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #CDCDCD;
+        background-color: #F5F5F5;
+    }
+
+    .left{
+        width: 160px;
+        min-height: 400px;
+        border: 1px solid #004C00;
+        float:left;
+        background-color: #004C00;
+    }
+
+    .content{
+        width: 640px;
+        min-height: 400px;
+        border: 1px solid #CDCDCD;
+        float:left;
+        margin-left: 5px;
+    }
+
+    .right{
+        width: 165px;
+        min-height: 400px;
+        border: 1px solid orange;
+        float:right;
+        margin-right: -2px;
+        background-color: orange;
+    }
+
+    .footer{
+        height: 50px;
+        clear: both;
+        border: 1px solid #000;
+        background-color: #000;
+    }
+    @media only screen and (max-width: 1600px) {
+    [class *= 'col-'] {
+    width: 100%;
+    }
+}
